@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="./estilo.css">
+</head>
+<body>
+
+<section class="container">
+  <h1>Cadastro
+  </h1>
+  <ul>
+    <li>Nenhum campo pode estar vazio</li>
+    <li>Usuário só poderá conter números e/ou letras</li>
+    <li>Usuário deverá ter entre 5 e 12 caracteres e não pode ser inserido caracteres especiais</li>
+    <li>Senha precisa ter entre 5 e 10 caracteres</li>
+    <li>A verificação precisa conter as mesmas senhas</li>
+  </ul>
+
+  <form action="/" method="POST" class="formulario">
+    <label for="input-nome">Nome:</label>
+    <input type="text" id="input-nome" class="nome validar">
+    <div class="erros erros-nome"></div>
+
+    <label for="input-sobrenome">Sobrenome:</label>
+    <input type="text" id="input-sobrenome" class="sobrenome validar">
+    <div class="erros erros-sobrenome"></div>
+
+    <label for="input-cpf">CPF:</label>
+    <input type="text" id="input-cpf" class="cpf validar">
+    <div class="erros erros-cpf"></div>
+
+    <label for="input-usuario">Usuario:</label>
+    <input type="text" id="input-usuario" class="usuario validar">
+    <div class="erros erros-usuario"></div>
+
+    <label for="input-senha">Senha:</label>
+    <input type="password" id="input-senha" class="senha validar">
+    <div class="erros erros-senha"></div>
+
+    <label for="input-repetirSenha">Verificar Senha:</label>
+    <input type="password" id="input-repetirSenha" class="repetirSenha validar">
+    <div class="erros erros-repetirSenha"></div>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+  <script src="./resposta.js"></script>
+  <script src="./cpf.js"></script>
+  <script src="./script.js"></script>
+
+</body>
